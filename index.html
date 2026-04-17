@@ -86,61 +86,74 @@
       gap: 25px;
     }
 
-    .card {
-      background: #181818;
-      padding: 15px;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-      position: relative;
-    }
+.card {
+    background: #181818;
+    padding: 15px;
+    border-radius: 12px;
 
-    .card:hover {
-      background: #282828;
-      transform: translateY(-6px);
-    }
+    /* Equal height */
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 
-    .employee-name {
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
+    /* Depth */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+    position: relative;
+  }
 
-    .message {
-      font-size: 13px;
-      color: #b3b3b3;
-      margin-bottom: 12px;
-      min-height: 40px;
-    }
+  .card:hover {
+    background: #282828;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  }
 
-    .qr img {
-      width: 100%;
-      border-radius: 8px;
-    }
+  .employee-name {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
 
-    .play-btn {
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
-      width: 45px;
-      height: 45px;
-      background: #1DB954;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: 0.3s;
-    }
+  /* Scrollable message */
+  .message {
+    font-size: 13px;
+    color: #b3b3b3;
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
 
-    .card:hover .play-btn {
-      opacity: 1;
-      transform: translateY(-5px);
-    }
+  .qr img {
+    width: 100%;
+    border-radius: 8px;
+  }
 
-    .play-btn::after {
-      content: '▶';
-      color: black;
-      font-size: 14px;
-    }
+  .play-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    background: #1DB954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .card:hover .play-btn {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+
+  .play-btn::after {
+    content: '▶';
+    color: black;
+    font-size: 14px;
+  }
 
     /* MOBILE */
     @media (max-width: 768px) {
@@ -238,7 +251,7 @@
     </div>
 
     <div class="subheader">Songs dedicated with love 💚</div>
-
+    <br>
     <div class="grid">
 
       <div class="card">
@@ -247,7 +260,7 @@
         <div class="qr">
           <img src="riddhi-song.jpg" alt="Spotify QR">
         </div>
-        <-- <div class="play-btn"></div> --!>
+        <!-- <div class="play-btn"></div> -->
       </div>
 
       <div class="card">
@@ -256,7 +269,7 @@
         <div class="qr">
           <img src="rushank-song.png" alt="Spotify QR">
         </div>
-        <-- <div class="play-btn"></div> --!>
+        <!-- <div class="play-btn"></div> -->
       </div>
 
       <div class="card">
@@ -265,7 +278,7 @@
         <div class="qr">
           <img src="vivek-song.png" alt="Spotify QR">
         </div>
-        <-- <div class="play-btn"></div> --!>
+        <!-- <div class="play-btn"></div> -->
       </div>
 
       <div class="card">
@@ -284,7 +297,7 @@ Variable pay मात्र आला नाही,
         <div class="qr">
           <img src="Samiksha-song.png" alt="Spotify QR">
         </div>
-        <-- <div class="play-btn"></div> --!>
+        <!-- <div class="play-btn"></div> -->
       </div>
 
       <div class="card">
@@ -293,7 +306,7 @@ Variable pay मात्र आला नाही,
         <div class="qr">
           <img src="shitansh-song.png" alt="Spotify QR">
         </div>
-        <-- <div class="play-btn"></div> --!>
+        <!-- <div class="play-btn"></div> -->
       </div>
 
       <div class="card">
@@ -302,7 +315,7 @@ Variable pay मात्र आला नाही,
         <div class="qr">
           <img src="onkar-song.png" alt="Spotify QR">
         </div>
-        <-- <div class="play-btn"></div> --!>
+        <!-- <div class="play-btn"></div> -->
       </div>
 
       <div class="card">
@@ -311,7 +324,7 @@ Variable pay मात्र आला नाही,
         <div class="qr">
           <img src="navneet-song.jpg" alt="Spotify QR">
         </div>
-       <-- <div class="play-btn"></div> --!>
+       <!-- <div class="play-btn"></div> -->
       </div>
 
     </div>
@@ -325,7 +338,7 @@ Variable pay मात्र आला नाही,
   <div class="player-left">
     <img src="Om-pic.png" alt="song">
     <div class="song-info">
-      <div>Playing something special 💚</div>
+      <div>Playing something special Tam Tum Mitra Mandal 💚</div>
       <div style="color:#b3b3b3; font-size:11px;">Farewell Playlist</div>
     </div>
   </div>
